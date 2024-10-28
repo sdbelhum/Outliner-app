@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 3rem;
+    color: #4a90e2; /* A nice blue color for the title */
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade-in animation for the heading */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* The following css was generated using chatGPT */
+/* Prompt: "I want a simple CSS design for a tree structure. The tree should have a root node and child nodes.*/ 
+/* Each node should have a name and buttons to edit, delete, and add children. The tree should be visually appealing and easy to navigate." */
+/* Accessed on October 26, 2024
+
+/* Flex container for name and buttons */
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between elements */
+}
+
+/* Adjust the appearance of the buttons */
+.edit-button, .delete-button, .add-button {
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* Style the outline item and its children */
+.outline-item {
+    margin-left: 20px; /* Indent children */
+    margin-top: 10px;
+    border-left: 2px solid #ccc;
+    padding-left: 10px;
+}
+
+/* Style for the children container */
+.children-container {
+    margin-top: 10px;
+}
+
+/* Style for the buttons */
+.edit-icon, .add-icon, .delete-icon {
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+}
+
+ /* Styling for the input field */
+.item-name-input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1em;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+/* Styling for the input field on focus */
+.item-name-input:focus {
+    border-color: #6c5ce7; /* Subtle accent color on focus */
+}
+/* Placeholder styling */
+.item-name-input::placeholder {
+    color: #aaa;
+}
+
+
+
+
+
